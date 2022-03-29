@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.woff2);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Black.woff2);
+  font-weight: 900;
+}
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2c2f;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.header {
+  flex: 0 0 108px;
+  padding: 28px 0;
+}
+.main {
+  flex: 1 1 auto;
+}
+.footer {
+  flex: 0 0 100px;
+}
+
+.header__container {
+  max-width: 1184px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__languages {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 18px;
+}
+.header__languag {
+  font-size: 24px;
+  line-height: 28px;
+}
+.header__languag:hover {
+  text-decoration: underline;
+}
+.rustravel {
+  padding: 28px 0 92px 0;
+}
+.rustravel__container {
+  max-width: 984px;
+  margin: auto;
+}
+.rustravel__title {
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.rustravel__subtitle {
+  max-width: 640px;
+  margin: 0 auto 64px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.figure__img{
+  width: 100%;
+  /* height: auto; */
+}
+
+.figure__quote {
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
