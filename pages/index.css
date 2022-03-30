@@ -30,7 +30,7 @@
   flex: 1 1 auto;
 }
 .footer {
-  flex: 0 0 100px;
+  flex: 0 0 42px;
 }
 
 .header__container {
@@ -214,9 +214,12 @@
   background-size: cover;
   opacity: 0.3;
 }
-.trains__background:hover {
+.trains__container:hover .trains__background {
   opacity: 1;
   cursor: pointer;
+}
+.trains__container:hover .trains__title {
+  padding-bottom: 60%;
 }
 
 .trains__title-wrap {
@@ -230,8 +233,29 @@
   line-height: 76px;
   text-align: center;
   margin-bottom: 32px;
+  transition: 2s ease;
 }
 .trains__subtitle {
   line-height: 22px;
   text-align: center;
+}
+/*footer
+----------*/
+.footer__container {
+  max-width: 1184px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links {
+  display: flex;
+  column-gap: 18px;
+}
+.footer__link {
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__copyright {
+  font-size: 14px;
+  line-height: 16px;
 }
