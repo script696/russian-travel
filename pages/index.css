@@ -3,16 +3,19 @@
   src: url(../fonts/Inter-Regular.woff2);
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Bold.woff2);
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Black.woff2);
   font-weight: 900;
 }
+
 .page {
   height: 100vh;
   display: flex;
@@ -22,46 +25,63 @@
   font-size: 18px;
   color: #fff;
 }
+
 .header {
-  flex: 0 0 108px;
-  padding: 28px 0;
-}
-.main {
-  flex: 1 1 auto;
-}
-.footer {
-  flex: 0 0 42px;
+  flex: 0 0 52px;
+  padding: 28px 0 0 0;
 }
 
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 92px;
+}
+
+
 .header__container {
-  max-width: 1184px;
+  padding: 0 15px;
+  max-width: 1214px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
+
+.header__logo {
+  width: 176px;
+  height: 52px;
+}
+
 .header__languages {
   display: flex;
   align-items: flex-end;
   column-gap: 18px;
 }
-.header__languag {
+
+.header__lang {
   font-size: 24px;
   line-height: 28px;
 }
+
 .header__languag:hover {
   text-decoration: underline;
 }
+
 /*section rustravel
 ----------*/
 .rustravel {
-  padding: 28px 0 92px 0;
+  padding: 56px 0 0 0;
 }
+
 .rustravel__container {
-  max-width: 984px;
+  padding: 0 15px;
+  max-width: 1014px;
   margin: auto;
 }
+
 .rustravel__title {
-  margin-bottom: 32px;
+  max-width: 720px;
+  margin: 0 auto 32px;
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
@@ -81,67 +101,80 @@
 }
 
 .figure__quote {
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 /*section survey
 ----------*/
 .survey__container {
-  max-width: 984px;
+  padding: 0 15px;
+  max-width: 1014px;
   margin: auto;
 }
+
 .survey__column {
   max-width: 690px;
   display: flex;
   flex-direction: column;
 }
+
 .survey__title {
   margin-bottom: 40px;
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
 }
+
 .survey__text {
   margin-bottom: 33px;
   font-size: 16px;
   line-height: 163%;
 }
+
 .survey__statement {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
 }
+
 .survey__statement_weight_regular {
   font-weight: 400;
 }
+
 /*photos
 ----------*/
-.photos {
-  padding: 92px 0;
-}
+
 .photos__container {
+  padding: 0 15px;
   max-width: 1184px;
   margin: auto;
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-rows: auto;
 }
+
 .photos__photo {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
 /*places
 ----------*/
 .places__container {
-  max-width: 984px;
+  padding: 0 15px;
+  max-width: 1014px;
   margin: auto;
   display: flex;
   flex-direction: column;
   row-gap: 80px;
 }
+
 .place {
   display: grid;
   grid-template-columns: 460px 1fr;
@@ -151,6 +184,7 @@
     "img text_position_top"
     "img text_position_bottom";
 }
+
 .place__title {
   grid-area: title;
   padding-bottom: 48px;
@@ -158,6 +192,7 @@
   font-size: 72px;
   line-height: 76px;
 }
+
 .place__link-wrap {
   grid-area: link;
   padding-bottom: 48px;
@@ -165,6 +200,7 @@
   line-height: 22px;
   position: relative;
 }
+
 .place__link::before {
   content: "URL";
   color: #aaaaaa;
@@ -176,38 +212,43 @@
   left: 0;
   top: -30px;
 }
+
 .place__img {
   grid-area: img;
   width: 100%;
 }
+
 .place__text {
   line-height: 163%;
 }
+
 .place__text_position_top {
   grid-area: text_position_top;
+  padding: 0 0 25px 0;
 }
+
 .place__text_position_bottom {
   grid-area: text_position_bottom;
 }
+
 /*trains
 ----------*/
-.trains {
+/* .trains {
   padding: 92px 0;
-}
+} */
 .trains__container {
-  max-width: 1184px;
+  padding: 0 15px;
+  max-width: 1214px;
   min-height: 740px;
   margin: auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.trains__container::before{
+
+.trains__container::before {
   content: "";
   background-image: url("../img/trains/cover-trains.jpg");
   background-size: contain;
@@ -219,12 +260,15 @@
   z-index: -1;
   opacity: 0.3;
   cursor: pointer;
+
 }
+
 .trains__container:hover::before {
   opacity: 1;
 }
+
 .trains__title {
-  max-width: 47%;
+  max-width: 560px;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
@@ -234,27 +278,265 @@
 }
 
 .trains__subtitle {
-  max-width: 31%;
+  max-width: 360px;
   line-height: 22px;
   text-align: center;
 }
+
 /*footer
 ----------*/
+.footer {
+  flex: 0 0 42px;
+  padding: 64px 0 24px 0;
+}
+
 .footer__container {
-  max-width: 1184px;
+  padding: 0 15px;
+  max-width: 1214px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
+
 .footer__links {
   display: flex;
   column-gap: 18px;
 }
+
 .footer__link {
   font-size: 16px;
   line-height: 18px;
 }
+
 .footer__copyright {
   font-size: 14px;
   line-height: 16px;
+}
+
+/*media
+----------*/
+@media screen and (max-width: 1152px) {
+  .header__container {
+    max-width: 958px;
+  }
+
+  .rustravel__container {
+    max-width: 958px;
+  }
+
+  .rustravel {
+    padding: 48px 0 0 0;
+  }
+
+  .rustravel__subtitle {
+    margin: 0 auto 56px;
+  }
+
+  .survey__container {
+    max-width: 958px;
+  }
+
+  .photos__container {
+    max-width: 958px;
+  }
+
+  .photos__container {
+    gap: 14px;
+  }
+
+  .places__container {
+    max-width: 958px;
+  }
+
+  .place {
+    grid-template-columns: 440px 1fr;
+    column-gap: 32px;
+  }
+
+  .trains__container {
+    max-width: 100%;
+    min-height: 640px;
+  }
+
+  .footer__container {
+    max-width: 958px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .header__container {
+    max-width: 740px;
+    padding: 0 10px;
+  }
+
+  .rustravel__container {
+    max-width: 100%;
+    padding: 0;
+
+  }
+
+  .figure__quote {
+    margin: 8px 0 0 24px;
+  }
+
+  .main {
+    row-gap: 88px;
+  }
+
+  .survey__container {
+    max-width: 740px;
+    padding: 0 10px;
+
+  }
+
+  .survey__column {
+    max-width: 740px;
+  }
+
+  .photos__container {
+    max-width: 740px;
+    padding: 0 10px;
+    gap: 16px;
+  }
+
+  .places__container {
+    max-width: 740px;
+    padding: 0 10px;
+    row-gap: 73px;
+  }
+
+  .place__title {
+    max-width: 330px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place {
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+  }
+
+  .place__text {
+    font-size: 16px;
+  }
+
+  .trains__container {
+    min-height: 480px;
+  }
+
+  .footer__container {
+    max-width: 740px;
+    padding: 0 10px;
+
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .header__container {
+    max-width: 308px;
+    padding: 10;
+  }
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+  .header__lang{
+    font-size: 18px;
+  line-height: 1.11;
+  }
+  .header {
+    flex: 0 0 42px;
+    padding: 16px 0 0 0;
+  }
+  .main {
+    row-gap: 64px;
+  }
+  .rustravel__title{
+    max-width: 288px;
+  margin: 0 auto 16px;
+  font-size: 40px;
+  line-height: 1.1;
+  }
+  .rustravel__subtitle {
+    max-width: 288px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .survey__container {
+    max-width: 308px;
+    padding: 10;
+  }
+  .survey__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .photos__container {
+    max-width: 308px;
+    padding: 10;
+    gap: 12px;
+  }
+  .places__container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .place {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    grid-template-areas:
+      "title"
+      "link"
+      "img"
+      "text_position_top"
+      "text_position_bottom";
+
+  }
+  .place__title {
+    padding: 0 16px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .place__link{
+    padding: 0 16px;
+  }
+  .place__text{
+    text-align: center;
+  }
+  .place__text_position_top{
+    padding: 0;
+    margin-bottom: -7px;
+  }
+  .trains__container {
+    min-height: 320px;
+  }
+  .trains__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 1.09;
+    margin-bottom: 16px;
+  }
+  .trains__subtitle {
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 1.14;
+  }
+  .footer {
+    flex: 0 0 310px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    justify-content: space-between;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .footer__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
