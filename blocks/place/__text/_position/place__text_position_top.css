@@ -1,0 +1,4 @@
+.place__text_position_top {
+  grid-area: text_position_top;
+  padding: 0 0 25px 0;
+}

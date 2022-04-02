@@ -1,0 +1,9 @@
+.photos__container {
+  padding: 0 15px;
+  max-width: 1184px;
+  margin: auto;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-rows: auto;
+}

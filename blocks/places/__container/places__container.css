@@ -1,0 +1,8 @@
+.places__container {
+  padding: 0 15px;
+  max-width: 1014px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}

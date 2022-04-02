@@ -1,3 +1,66 @@
+/* Styles reset
+-------------------------------------------------------------------- */
+@import url(../vendor/normalize.css);
+/* Blocks
+-------------------------------------------------------------------- */
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/rustravel/rustravel.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/footer/footer.css);
+
+/* Elements
+-------------------------------------------------------------------- */
+/* header------ */
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__languages/header__languages.css);
+@import url(../blocks/header/__lang/header__lang.css);
+/* rustravel------ */
+@import url(../blocks/rustravel/__container/rustravel__container.css);
+@import url(../blocks/rustravel/__title/rustravel__title.css);
+@import url(../blocks/rustravel/__subtitle/rustravel__subtitle.css);
+@import url(../blocks/rustravel/__img/rustravel__img.css);
+/* figure------ */
+@import url(../blocks/figure/__quote/figure__quote.css);
+/* survey------ */
+@import url(../blocks/survey/__container/survey__container.css);
+@import url(../blocks/survey/__column/survey__column.css);
+@import url(../blocks/survey/__title/survey__title.css);
+@import url(../blocks/survey/__text/survey__text.css);
+@import url(../blocks/survey/__statement/survey__statement.css);
+/* photos------ */
+@import url(../blocks/photos/__container/photos__container.css);
+@import url(../blocks/photos/__photo/photos__photo.css);
+/* places------ */
+@import url(../blocks/places/__container/places__container.css);
+/* place------ */
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__url/place__url.css);
+@import url(../blocks/place/__img/place__img.css);
+@import url(../blocks/place/__text/place__text.css);
+/* trains------ */
+@import url(../blocks/trains/__container/trains__container.css);
+@import url(../blocks/trains/__title/trains__title.css);
+@import url(../blocks/trains/__subtitle/trains__subtitle.css);
+/* footer------ */
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+
+
+/* Modificators
+-------------------------------------------------------------------- */
+@import url(../blocks/survey/__statement/_weight/survey__statement_weight_regular.css);
+@import url(../blocks/place/__text/_position/place__text_position_top.css);
+@import url(../blocks/place/__text/_position/place__text_position_bottom.css);
+
+
+/* Fonts
+-------------------------------------------------------------------- */
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Regular.woff2);
@@ -16,302 +79,8 @@
   font-weight: 900;
 }
 
-.page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #2a2c2f;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  color: #fff;
-}
-
-.header {
-  flex: 0 0 52px;
-  padding: 28px 0 0 0;
-}
-
-.main {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 92px;
-}
 
 
-.header__container {
-  padding: 0 15px;
-  max-width: 1214px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__logo {
-  width: 176px;
-  height: 52px;
-}
-
-.header__languages {
-  display: flex;
-  align-items: flex-end;
-  column-gap: 18px;
-}
-
-.header__lang {
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.header__languag:hover {
-  text-decoration: underline;
-}
-
-/*section rustravel
-----------*/
-.rustravel {
-  padding: 56px 0 0 0;
-}
-
-.rustravel__container {
-  padding: 0 15px;
-  max-width: 1014px;
-  margin: auto;
-}
-
-.rustravel__title {
-  max-width: 720px;
-  margin: 0 auto 32px;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 100px;
-  text-align: center;
-}
-
-.rustravel__subtitle {
-  max-width: 640px;
-  margin: 0 auto 64px;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-}
-
-.figure__img {
-  width: 100%;
-}
-
-.figure__quote {
-  margin: 8px 0 0 0;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-/*section survey
-----------*/
-.survey__container {
-  padding: 0 15px;
-  max-width: 1014px;
-  margin: auto;
-}
-
-.survey__column {
-  max-width: 690px;
-  display: flex;
-  flex-direction: column;
-}
-
-.survey__title {
-  margin-bottom: 40px;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 58px;
-}
-
-.survey__text {
-  margin-bottom: 33px;
-  font-size: 16px;
-  line-height: 163%;
-}
-
-.survey__statement {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.survey__statement_weight_regular {
-  font-weight: 400;
-}
-
-/*photos
-----------*/
-
-.photos__container {
-  padding: 0 15px;
-  max-width: 1184px;
-  margin: auto;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-  grid-template-rows: auto;
-}
-
-.photos__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*places
-----------*/
-.places__container {
-  padding: 0 15px;
-  max-width: 1014px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 80px;
-}
-
-.place {
-  display: grid;
-  grid-template-columns: 460px 1fr;
-  column-gap: 40px;
-  grid-template-areas:
-    "title link"
-    "img text_position_top"
-    "img text_position_bottom";
-}
-
-.place__title {
-  grid-area: title;
-  padding-bottom: 48px;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 76px;
-}
-
-.place__link-wrap {
-  grid-area: link;
-  padding-bottom: 48px;
-  align-self: end;
-  line-height: 22px;
-  position: relative;
-}
-
-.place__link::before {
-  content: "URL";
-  color: #aaaaaa;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 2px;
-  position: absolute;
-  left: 0;
-  top: -30px;
-}
-
-.place__img {
-  grid-area: img;
-  width: 100%;
-}
-
-.place__text {
-  line-height: 163%;
-}
-
-.place__text_position_top {
-  grid-area: text_position_top;
-  padding: 0 0 25px 0;
-}
-
-.place__text_position_bottom {
-  grid-area: text_position_bottom;
-}
-
-/*trains
-----------*/
-/* .trains {
-  padding: 92px 0;
-} */
-.trains__container {
-  padding: 0 15px;
-  max-width: 1214px;
-  min-height: 740px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.trains__container::before {
-  content: "";
-  background-image: url("../img/trains/cover-trains.jpg");
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.3;
-  cursor: pointer;
-
-}
-
-.trains__container:hover::before {
-  opacity: 1;
-}
-
-.trains__title {
-  max-width: 560px;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 76px;
-  text-align: center;
-  margin-bottom: 32px;
-  transition: 2s ease;
-}
-
-.trains__subtitle {
-  max-width: 360px;
-  line-height: 22px;
-  text-align: center;
-}
-
-/*footer
-----------*/
-.footer {
-  flex: 0 0 42px;
-  padding: 64px 0 24px 0;
-}
-
-.footer__container {
-  padding: 0 15px;
-  max-width: 1214px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__links {
-  display: flex;
-  column-gap: 18px;
-}
-
-.footer__link {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.footer__copyright {
-  font-size: 14px;
-  line-height: 16px;
-}
 
 /*media
 ----------*/
@@ -348,10 +117,6 @@
     max-width: 958px;
   }
 
-  .place {
-    grid-template-columns: 440px 1fr;
-    column-gap: 32px;
-  }
 
   .trains__container {
     max-width: 100%;
@@ -411,10 +176,7 @@
     line-height: 46px;
   }
 
-  .place {
-    grid-template-columns: 340px 1fr;
-    column-gap: 28px;
-  }
+
 
   .place__text {
     font-size: 16px;
@@ -436,105 +198,118 @@
     max-width: 308px;
     padding: 10;
   }
+
   .header__logo {
     width: 142px;
     height: 42px;
   }
-  .header__lang{
+
+  .header__lang {
     font-size: 18px;
-  line-height: 1.11;
+    line-height: 1.11;
   }
+
   .header {
     flex: 0 0 42px;
     padding: 16px 0 0 0;
   }
+
   .main {
     row-gap: 64px;
   }
-  .rustravel__title{
+
+  .rustravel__title {
     max-width: 288px;
-  margin: 0 auto 16px;
-  font-size: 40px;
-  line-height: 1.1;
+    margin: 0 auto 16px;
+    font-size: 40px;
+    line-height: 1.1;
   }
+
   .rustravel__subtitle {
     max-width: 288px;
     margin: 0 auto 40px;
     font-size: 16px;
     line-height: 1.25;
   }
+
   .survey__container {
     max-width: 308px;
     padding: 10;
   }
+
   .survey__title {
     font-size: 32px;
     line-height: 1.09;
   }
+
   .photos__container {
     max-width: 308px;
     padding: 10;
     gap: 12px;
   }
+
   .places__container {
     max-width: 100%;
     padding: 0;
-  }
-  .place {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 32px;
-    grid-template-areas:
-      "title"
-      "link"
-      "img"
-      "text_position_top"
-      "text_position_bottom";
+    row-gap: 50px;
 
   }
+
+
   .place__title {
     padding: 0 16px;
     font-size: 32px;
     line-height: 1.09;
   }
-  .place__link{
+
+  .place__link-wrap {
     padding: 0 16px;
   }
-  .place__text{
-    text-align: center;
+
+  .place__text {
+    padding: 0 16px;
   }
-  .place__text_position_top{
-    padding: 0;
+
+  .place__text_position_top {
     margin-bottom: -7px;
   }
+
   .trains__container {
     min-height: 320px;
   }
+
   .trains__title {
     max-width: 288px;
     font-size: 32px;
     line-height: 1.09;
     margin-bottom: 16px;
   }
+
   .trains__subtitle {
     max-width: 288px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.14;
   }
+
   .footer {
     flex: 0 0 310px;
   }
+
   .footer__container {
+    max-width: 308px;
+    padding: 10;
     display: flex;
     flex-direction: column;
     row-gap: 48px;
     justify-content: space-between;
   }
+
   .footer__links {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
   }
+
   .footer__link {
     font-size: 24px;
     line-height: 24px;

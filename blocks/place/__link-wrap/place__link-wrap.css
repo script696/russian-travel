@@ -1,0 +1,6 @@
+.place__link-wrap {
+  grid-area: link;
+  padding-bottom: 48px;
+  align-self: end;
+  line-height: 22px;
+}
