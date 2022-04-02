@@ -6,3 +6,22 @@
   flex-direction: column;
   row-gap: 80px;
 }
+@media screen and (max-width: 1152px) {
+  .places__container {
+    max-width: 958px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .places__container {
+    max-width: 740px;
+    padding: 0 10px;
+    row-gap: 73px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .places__container {
+    max-width: 100%;
+    padding: 0;
+    row-gap: 50px;
+  }
+}

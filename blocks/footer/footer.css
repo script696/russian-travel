@@ -2,3 +2,8 @@
   flex: 0 0 42px;
   padding: 64px 0 24px 0;
 }
+@media screen and (max-width: 544px) {
+  .footer {
+    flex: 0 0 310px;
+  }
+}

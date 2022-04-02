@@ -6,3 +6,11 @@
   line-height: 100px;
   text-align: center;
 }
+@media screen and (max-width: 685px) {
+  .rustravel__title {
+    max-width: 288px;
+    margin: 0 auto 16px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}

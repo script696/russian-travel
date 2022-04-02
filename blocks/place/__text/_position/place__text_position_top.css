@@ -2,3 +2,8 @@
   grid-area: text_position_top;
   padding: 0 0 25px 0;
 }
+@media screen and (max-width: 544px) {
+  .place__text_position_top {
+    margin-bottom: -7px;
+  }
+}

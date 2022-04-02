@@ -7,3 +7,23 @@
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-template-rows: auto;
 }
+@media screen and (max-width: 1152px) {
+  .photos__container {
+    max-width: 958px;
+    gap: 14px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .photos__container {
+    max-width: 740px;
+    padding: 0 10px;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .photos__container {
+    max-width: 308px;
+    padding: 10;
+    gap: 12px;
+  }
+}

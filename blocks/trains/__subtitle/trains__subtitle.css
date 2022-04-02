@@ -3,3 +3,11 @@
   line-height: 22px;
   text-align: center;
 }
+
+@media screen and (max-width: 544px) {
+  .trains__subtitle {
+    max-width: 288px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}

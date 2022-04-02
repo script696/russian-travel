@@ -2,3 +2,9 @@
   flex: 0 0 52px;
   padding: 28px 0 0 0;
 }
+@media screen and (max-width: 544px) {
+  .header {
+    flex: 0 0 42px;
+    padding: 16px 0 0 0;
+  }
+}

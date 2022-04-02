@@ -5,3 +5,16 @@
   line-height: 36px;
   text-align: center;
 }
+@media screen and (max-width: 1152px) {
+  .rustravel__subtitle {
+    margin: 0 auto 56px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .rustravel__subtitle {
+    max-width: 288px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

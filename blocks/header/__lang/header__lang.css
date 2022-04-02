@@ -6,3 +6,9 @@
 .header__lang:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 544px) {
+  .header__lang {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}

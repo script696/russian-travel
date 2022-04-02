@@ -4,3 +4,10 @@
   align-self: end;
   line-height: 22px;
 }
+
+
+@media screen and (max-width: 544px) {
+  .place__link-wrap {
+    padding: 0 16px;
+  }
+}

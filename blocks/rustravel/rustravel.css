@@ -1,3 +1,9 @@
 .rustravel {
   padding: 56px 0 0 0;
 }
+
+@media screen and (max-width: 1152px) {
+  .rustravel {
+    padding: 48px 0 0 0;
+  }
+}

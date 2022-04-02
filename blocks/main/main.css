@@ -4,3 +4,13 @@
   flex-direction: column;
   row-gap: 92px;
 }
+@media screen and (max-width: 896px) {
+  .main {
+    row-gap: 88px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .main {
+    row-gap: 64px;
+  }
+}
