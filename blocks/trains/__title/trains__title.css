@@ -5,7 +5,7 @@
   line-height: 76px;
   text-align: center;
   text-rendering: optimizeLegibility;
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
   transition: 2s ease;
 }
 

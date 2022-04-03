@@ -1,3 +1,9 @@
-.place__link:hover{
+.place__link {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.place__link:hover {
   text-decoration: underline;
 }
