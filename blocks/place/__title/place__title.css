@@ -4,7 +4,9 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
+  text-rendering: optimizeLegibility;
 }
+
 @media screen and (max-width: 896px) {
   .place__title {
     max-width: 330px;
@@ -12,6 +14,7 @@
     line-height: 46px;
   }
 }
+
 @media screen and (max-width: 544px) {
   .place__title {
     padding: 0 16px;

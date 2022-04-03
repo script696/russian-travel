@@ -4,9 +4,11 @@
   font-size: 72px;
   line-height: 76px;
   text-align: center;
+  text-rendering: optimizeLegibility;
   margin-bottom: 32px;
   transition: 2s ease;
 }
+
 @media screen and (max-width: 544px) {
   .trains__title {
     max-width: 288px;

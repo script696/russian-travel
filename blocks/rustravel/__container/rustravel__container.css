@@ -4,7 +4,7 @@
   margin: auto;
 }
 @media screen and (max-width: 1152px) {
-  .header__container {
+  .rustravel__container {
     max-width: 958px;
   }
 }

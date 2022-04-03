@@ -1,0 +1,21 @@
+.figure__img {
+  width: 100%;
+  height: 615px;
+  /* object-fit: cover; */
+}
+
+@media screen and (max-width: 1152px) {
+  .figure__img {
+    height: 580px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .figure__img {
+    height: 480px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .figure__img {
+    height: 200px;
+  }
+}
