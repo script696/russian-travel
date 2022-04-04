@@ -1,7 +1,6 @@
 .place__text {
-  box-sizing: border-box;
   margin: 0;
-  line-height: 163%;
+  line-height: 1.63;
 }
 @media screen and (max-width: 896px) {
   .place__text {

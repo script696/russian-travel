@@ -1,6 +1,7 @@
 .trains__subtitle {
+  margin: 0;
   max-width: 360px;
-  line-height: 22px;
+  line-height: 1.22;
   text-align: center;
 }
 

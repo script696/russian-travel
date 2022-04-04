@@ -1,7 +1,7 @@
 .place__url {
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
   color: #aaaaaa;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   letter-spacing: 2px;
 }
