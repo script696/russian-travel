@@ -60,26 +60,9 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__links/footer__links.css);
 
-
-
+/* Modificators
+-------------------------------------------------------------------- */
+@import url(../blocks/header/__lang/_active/header__lang_active.css);
 /* Fonts
 -------------------------------------------------------------------- */
-
-@font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Regular.woff2);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Bold.woff2);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Black.woff2);
-  font-weight: 900;
-}
-
+@import url(../fonts/fonts.css);
